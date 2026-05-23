@@ -12,6 +12,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
+    // Catch missing properties when spreading/assigning objects
+    "exactOptionalPropertyTypes": true,
 
     // JSX support for React
     "jsx": "react-jsx",
