@@ -32,7 +32,9 @@
       "@hooks/*": ["src/hooks/*"],
       "@utils/*": ["src/utils/*"],
       "@types/*": ["src/types/*"],
-      "@assets/*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"],
+      // Added for easy access to store-related modules while exploring tldraw internals
+      "@store/*": ["src/store/*"]
     },
 
     // Source maps for debugging
