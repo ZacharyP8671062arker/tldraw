@@ -1,6 +1,10 @@
 /**
  * tldraw - A fork of tldraw/tldraw
  * Main entry point for the application
+ *
+ * Personal fork notes:
+ * - Tracking upstream at tldraw/tldraw
+ * - Custom modifications for my own learning/experimentation
  */
 
 import { Tldraw, TldrawProps } from './components/Tldraw'
@@ -27,3 +31,4 @@ export type { TLShape, TLShapeId, TLRecord, StoreSnapshot }
 
 // Version info
 export const version = '0.1.0'
+export const upstreamVersion = '2.0.0' // upstream version this fork is based on
