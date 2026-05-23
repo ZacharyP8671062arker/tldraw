@@ -57,10 +57,7 @@
     "node_modules",
     "dist",
     "build",
-    "coverage",
-    "**/*.test.ts",
-    "**/*.test.tsx",
-    "**/*.spec.ts",
-    "**/*.spec.tsx"
+    "coverage"
+    // Note: keeping test files included so I get type checking on tests locally
   ]
 }
