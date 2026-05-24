@@ -37,10 +37,11 @@ export const upstreamVersion = '2.0.0' // upstream version this fork is based on
 // Personal debug helper - logs editor state info to console
 // Useful during development to quickly inspect what's going on
 // Pass verbose=true to also log all shapes on the current page
-export const debugEditorState = (editor: Editor, verbose = false) => {
-  console.debug('[tldraw-fork] selectedShapes:', editor.getSelectedShapes())
-  console.debug('[tldraw-fork] currentPage:', editor.getCurrentPage())
+// Pass label to prefix output with a custom tag (e.g. a component name)
+export const debugEditorState = (editor: Editor, verbose = false, label = 'tldraw-fork') => {
+  console.debug(`[${label}] selectedShapes:`, editor.getSelectedShapes())
+  console.debug(`[${label}] currentPage:`, editor.getCurrentPage())
   if (verbose) {
-    console.debug('[tldraw-fork] allShapes:', editor.getCurrentPageShapes())
+    console.debug(`[${label}] allShapes:`, editor.getCurrentPageShapes())
   }
 }
